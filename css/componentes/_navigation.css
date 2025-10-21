@@ -1,0 +1,61 @@
+/* Estilo Padrão (Desktop) */
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+.main-nav a {
+    color: var(--color-text-light);
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.main-nav a:hover {
+    opacity: 0.8;
+}
+
+/* Esconde o menu hambúrguer no desktop */
+.hamburger-menu {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--color-text-light);
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 20;
+    line-height: 1;
+}
+
+/* BREAKPOINT para Mobile */
+@media (max-width: 768px) {
+    .main-nav {
+        display: none; /* Escondido por padrão */
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: var(--color-primary-dark);
+        padding: var(--spacing-xl) 0 var(--spacing-sm) 0;
+        z-index: 10;
+        min-height: 100vh;
+    }
+
+    .main-nav.is-open {
+        display: flex; /* Classe JS que o mostra */
+    }
+
+    .main-nav a {
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: var(--spacing-sm) var(--spacing-md);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        text-align: center;
+    }
+
+    /* Mostra o ícone hambúrguer no mobile */
+    .hamburger-menu {
+        display: block;
+    }
+}

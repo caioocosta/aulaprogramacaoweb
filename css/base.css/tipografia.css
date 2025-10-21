@@ -1,0 +1,28 @@
+/* Resets e Estilos Globais */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: var(--font-size-sm);
+    color: var(--color-text-dark);
+    line-height: 1.6;
+    background-color: var(--color-neutral-light); /* Usa a variável */
+}
+
+h1 { font-size: var(--font-size-xl); margin-bottom: var(--spacing-md); }
+h2 { font-size: var(--font-size-lg); margin-bottom: var(--spacing-sm); }
+h3 { font-size: var(--font-size-md); margin-bottom: var(--spacing-xs); }
+p { margin-bottom: var(--spacing-sm); }
+
+/* Links de texto fora da navegação */
+a {
+    color: var(--color-primary-dark);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}

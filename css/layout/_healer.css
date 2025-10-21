@@ -1,0 +1,10 @@
+/* Aplica o estilo base do cabeçalho */
+.main-header {
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    padding: var(--spacing-sm) var(--spacing-md);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--shadow-elevation-1);
+}

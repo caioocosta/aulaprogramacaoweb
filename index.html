@@ -2,39 +2,56 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>ONG Exemplo - Página Inicial</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetRescue - Resgate de Cães</title>
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <header>
-    <h1>ONG Exemplo</h1>
-    <nav>
-      <a href="index.html">Início</a> |
-      <a href="projetos.html">Projetos</a> |
-      <a href="cadastro.html">Cadastro</a>
+  <header class="main-header">
+    <a href="index.html">
+        <h1>PetRescue</h1>
+    </a>
+    <button class="hamburger-menu" aria-label="Menu de Navegação">&#9776;</button>
+    
+    <nav class="main-nav">
+      <a href="index.html">Início</a>
+      <a href="projeto.html">Nossos Cães</a>
+      <a href="cadastro.html" class="btn-primary">Adote / Ajude</a>
     </nav>
   </header>
 
-  <main>
-    <section>
-      <h2>Sobre a ONG</h2>
-      <p>Missão: Transformar vidas através de projetos sociais.</p>
-      <p>Contato: contato@ongexemplo.org | (11) 99999-9999</p>
-      <img src="imagens/logo.jpg" alt="Logo da ONG">
+  <main class="container grid-main">
+    
+    <section class="col-span-8">
+      <h2>Acolhimento e Esperança</h2>
+      <p>Nossa missão é resgatar, reabilitar e encontrar lares amorosos para cães abandonados nas ruas de nossa cidade. Acreditamos que todo animal merece uma segunda chance.</p>
+      
+      <img src="imagens/hero-dog.jpg" alt="Cão resgatado e feliz" class="responsive-img">
+
+      <p>O abandono animal é um problema grave que combatemos todos os dias. Com a sua ajuda, podemos oferecer cuidados veterinários, alimentação de qualidade e muito amor até que encontrem suas novas famílias.</p>
     </section>
 
-    <section>
-      <h2>Últimas Notícias</h2>
-      <article>
-        <h3>Projeto de Educação</h3>
-        <p>Descrição do projeto...</p>
-        <img src="imagens/logo2.jpg" alt="Projeto de Educação">
+    <section class="col-span-4">
+      <h2>Como Ajudar</h2>
+      
+      <article class="card">
+        <h3>Adote um Amigo</h3>
+        <p>Conheça os cães disponíveis para adoção e mude uma vida hoje. O processo é simples e responsável.</p>
+        <a href="projeto.html">Ver Cães</a>
+      </article>
+
+      <article class="card">
+        <h3>Faça uma Doação</h3>
+        <p>Seja um padrinho e ajude a cobrir custos de alimentação e veterinário. Qualquer valor faz a diferença.</p>
+        <a href="cadastro.html">Quero Doar</a>
       </article>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 ONG Exemplo</p>
+    <p>&copy; 2025 PetRescue - Todos os direitos reservados.</p>
   </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,43 @@
+/* 1. Container e Grid Principal */
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-sm);
+}
+
+.grid-main {
+    display: grid;
+    /* Define o layout de 12 colunas para telas grandes/desktop */
+    grid-template-columns: repeat(12, 1fr);
+    /* ESSA LINHA ADICIONA O ESPAÇAMENTO ENTRE AS COLUNAS */
+    gap: var(--spacing-lg); 
+    padding: var(--spacing-xl) 0;
+}
+
+/* Classes de Coluna (Desktop - Mobile First) */
+.col-span-12 { grid-column: span 12; }
+.col-span-8 { grid-column: span 8; } 
+.col-span-4 { grid-column: span 4; } 
+
+
+/* 2. Classe que corrige o tamanho da Imagem */
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--border-radius);
+}
+
+/* 3. Media Queries (Breakpoints) para Responsividade */
+
+/* Mobile Padrão (< 768px) - Colunas quebram para 1/1 */
+@media (max-width: 768px) {
+    .grid-main {
+        grid-template-columns: 1fr; /* Muda para 1 coluna */
+        gap: var(--spacing-md);
+    }
+    .col-span-8, .col-span-4 {
+        grid-column: span 1; /* Todos ocupam 1 coluna no mobile */
+    }
+}
+

@@ -1,0 +1,19 @@
+/* 1. VARIÁVEIS - DEVE SER O PRIMEIRO */
+@import url('_variaveis.css');
+
+/* 2. BASE (Reset e estilos globais) */
+@import url('base.css');
+
+/* 3. TIPOGRAFIA */
+@import url('_tipografia.css');
+
+/* 4. LAYOUT (GRID, Header, Footer) */
+@import url('layout/_grid.css');
+@import url('layout/_header.css');
+@import url('layout/_footer.css');
+
+/* 5. COMPONENTES (Botões, Cards, Formulários, Navegação) */
+@import url('components/_buttons.css');
+@import url('components/_cards.css');
+@import url('components/_forms.css');
+@import url('components/_navigation.css');

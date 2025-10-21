@@ -1,0 +1,39 @@
+/* Estilo geral para o componente Card */
+.card {
+    /* Usa a variável de cor clara (ex: branco) */
+    background-color: var(--color-text-light); 
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+    /* Adiciona uma sombra suave (variável definida em _variaveis.css) */
+    box-shadow: var(--shadow-elevation-1);
+    
+    /* Faz com que o conteúdo dentro do card se organize verticalmente */
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm); /* Espaçamento entre os elementos internos */
+}
+
+/* Regras para a Imagem dentro do Card (CORREÇÃO DE ALTURA E ESPAÇAMENTO) */
+.card img {
+    width: 100%;
+    height: auto; 
+    display: block;
+    margin-bottom: var(--spacing-sm);
+
+    /* ---------------------------------------------------- */
+    /* Estas são as linhas que corrigem o problema de altura: */
+    /* ---------------------------------------------------- */
+    /* Força todas as imagens dos cards a terem no mínimo 250px de altura */
+    min-height: 250px; 
+    /* Garante que a imagem preencha o espaço (250px) sem distorcer, cortando o excesso */
+    object-fit: cover;
+}
+
+/* Estilo para títulos e parágrafos dentro do card */
+.card h3 {
+    margin-top: 0;
+}
+.card p {
+    /* Remove margem padrão para usar o gap do flex */
+    margin: 0;
+}

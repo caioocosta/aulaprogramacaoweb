@@ -1,0 +1,22 @@
+/* ===== Estilos Globais ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family, Arial, sans-serif);
+  color: var(--color-text);
+  background-color: var(--color-neutral-light);
+  line-height: 1.6;
+}
+
+/* ===== Ajustes Globais de Imagens ===== */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--border-radius);
+  margin: var(--spacing-sm) 0;
+}

@@ -1,0 +1,17 @@
+:root {
+    /* CORES (Se você já tiver definido) */
+    --color-primary: #1e88e5; 
+    --color-secondary: #ffc107;
+    --color-text-light: #f8f8f8;
+    --color-text-dark: #333;
+
+    /* ESPAÇAMENTOS (CRÍTICO PARA O SEU PROBLEMA) */
+    --spacing-sm: 8px;   /* Pequeno */
+    --spacing-md: 16px;  /* Médio */
+    --spacing-lg: 32px;  /* Grande (Usado no gap do Grid) */
+    --spacing-xl: 64px;  /* Extra Grande */
+
+    /* OUTROS */
+    --border-radius: 8px;
+    --shadow-elevation-1: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
